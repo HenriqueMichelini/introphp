@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1 class="text-center mt-5 mb-5">Preencha os campos abaixo<h1>
-        <form action="cadastrar_funcionario.php" method="post">
+        <form action="update.php" method="post">
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
