@@ -39,27 +39,6 @@
             
             mysqli_close($conn);
             ?>
-            <tr>
-            <td>João</td>
-            <td>joao@example.com</td>
-            <td>Programador</td>
-            <td>R$ 1000,00</td>
-            <td><?php echo "\u{274C} ✏️"?></td>
-            </tr>
-            <tr>
-            <td>Maria</td>
-            <td>maria@example.com</td>
-            <td>Programador</td>
-            <td>R$ 1000,00</td>
-            <td><?php echo "\u{274C} ✏️"?></td>
-            </tr>
-            <tr>
-            <td>Paulo</td>
-            <td>paulo@example.com</td>
-            <td>Programador</td>
-            <td>R$ 1000,00</td>
-            <td><?php echo "\u{274C} ✏️"?></td>
-            </tr>
         </tbody>
         </table>    
     </div>
