@@ -10,8 +10,11 @@ $email = $_POST['email'];
 $funcao = $_POST['funcao'];
 $salario = $_POST['salario'];
 
-$sql = "INSERT INTO funcionarios (nome, email, funcao, salario) VALUES (?, ?, ?, ?)";
+$sql_code = "INSERT INTO funcionarios (nome, email, salario, funcao) VALUES ('$nome', '$email', '$salario', '$funcao')";
 
+$sql_query = $conn->query($sql_code) or die("Erro ao executar query: " . $conn->error);
+
+/*
 //  Preparar declaração SQL
 $stmt = mysqli_prepare($conn, $sql);
 
@@ -21,7 +24,7 @@ if(!$stmt) {
 }
 
 //  Associa as variáveis aos parâmetros da declaração SQL
-mysqli_stmt_bind_param($stmt, "sssd", $nome, $email, $funcao, $salario);
+mysqli_stmt_bind_param($stmt, "ssds", $nome, $email, $funcao, $salario);
 
 //  Executar declaração SQL
 if(!mysqli_stmt_execute($stmt)) {
@@ -33,6 +36,7 @@ mysqli_stmt_close($stmt);
 
 //  Fecha a conexão com o banco de dados
 mysqli_close($conn);
+*/
 
 header('Location: index.php');
 exit;
